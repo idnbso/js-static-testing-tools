@@ -7,6 +7,7 @@ interface User {
     first: string
     middle: string
     last: string
+    full: string
   }
 }
 function getFullName(user: User): string {
@@ -18,4 +19,11 @@ function getFullName(user: User): string {
 
 add(1, 2)
 
-getFullName({name: {first: 'Joe', middle: 'Bud', last: 'Matthews'}})
+getFullName({
+  name: {
+    first: 'Joe',
+    middle: 'Bud',
+    last: 'Matthews',
+    full: 'Joe B. Matthews',
+  },
+})
